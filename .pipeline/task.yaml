@@ -16,7 +16,7 @@ spec:
       description: the ibmcloud api endpoint
       default: "https://cloud.ibm.com"
   workspaces:
-  - name: task-pvc
+  - name: task-ws
     mountPath: /artifacts   
   steps:
     - name: execute-iam
