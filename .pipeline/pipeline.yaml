@@ -69,9 +69,9 @@ spec:
         - name: output
           workspace: pipeline-ws
   tasks:
-    - name: pipeline-build-task
+    - name: execute
       taskRef:
-        name: build-task
+        name: build-task-1
       params:
         - name: repository
           value: $(params.repository)
