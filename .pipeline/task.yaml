@@ -41,5 +41,5 @@ spec:
           ibmcloud logout;
           ibmcloud login --apikey $IBMCLOUD_API_KEY --no-region;
           ls;
-          cd /workspace;
+          cd /artifacts;
           ls;
