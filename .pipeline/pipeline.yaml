@@ -81,5 +81,5 @@ spec:
         - name: apikey
           value: $(params.apikey)
       workspaces:
-      - name: task-pvc
-        workspace: pipeline-pvc          
+      - name: output
+        workspace: pipeline-ws          
