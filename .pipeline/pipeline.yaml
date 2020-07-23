@@ -68,7 +68,6 @@ spec:
       workspaces:
         - name: output
           workspace: pipeline-ws
-  tasks:
     - name: execute
       taskRef:
         name: build-task-1
