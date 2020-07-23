@@ -73,6 +73,8 @@ spec:
     - name: execute
       taskRef:
         name: build-task-1
+      runafter:
+        - git-clone
       params:
         - name: repository
           value: $(params.repository)
