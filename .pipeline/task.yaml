@@ -40,5 +40,6 @@ spec:
           apt-get -y install python3;
           ibmcloud logout;
           ibmcloud login --apikey $IBMCLOUD_API_KEY --no-region;
+          ls;
           cd /workspace;
           ls;
