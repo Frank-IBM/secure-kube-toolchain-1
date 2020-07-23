@@ -68,21 +68,6 @@ spec:
       workspaces:
         - name: output
           workspace: pipeline-ws
----
-apiVersion: tekton.dev/v1beta1
-kind: Pipeline
-metadata:
-  name: pipeline
-spec:
-  params:
-    - name: repository
-      description: the git repo
-    - name: revision
-      description: the branch for the git repo
-    - name: apikey
-      description: the ibmcloud api key
-  workspaces:
-  - name: pipeline-pvc
   tasks:
     - name: pipeline-build-task
       taskRef:
