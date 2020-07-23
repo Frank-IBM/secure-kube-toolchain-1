@@ -5,6 +5,8 @@ metadata:
   name: secure-kube-pipeline
 spec:
   params:
+    - name: apikey
+      description: the ibmcloud api key
     - name: repository
       description: the git repo
     - name: branch
