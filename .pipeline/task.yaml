@@ -2,7 +2,7 @@
 apiVersion: tekton.dev/v1beta1
 kind: Task
 metadata:
-  name: build-task-1
+  name: execute-task
 spec:
   params:
     - name: repository

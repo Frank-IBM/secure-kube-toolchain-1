@@ -2,7 +2,7 @@
 apiVersion: tekton.dev/v1beta1
 kind: Pipeline
 metadata:
-  name: secure-kube-pipeline
+  name: pipeline
 spec:
   params:
     - name: apikey
@@ -40,7 +40,7 @@ spec:
           workspace: pipeline-ws
     - name: execute
       taskRef:
-        name: build-task-1
+        name: execute-task
       runafter:
         - git-clone
       params:

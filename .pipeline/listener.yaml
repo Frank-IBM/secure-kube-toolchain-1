@@ -2,7 +2,7 @@
 apiVersion: tekton.dev/v1beta1
 kind: TriggerTemplate
 metadata:
-  name: trigger-template-secure-kube
+  name: trigger-template
 spec:
   params:
     - name: apikey
@@ -34,7 +34,7 @@ spec:
         name: secure-kube-$(uid)
       spec:
         pipelineRef:
-          name: secure-kube-pipeline
+          name: pipeline
         params:
           - name: apikey
             value: $(params.apikey)
@@ -71,7 +71,7 @@ spec:
     - binding:
         name: trigger-binding-manual
       template:
-        name: trigger-template-secure-kube
+        name: trigger-template
 ---
 apiVersion: tekton.dev/v1beta1
 kind: TriggerBinding
@@ -95,4 +95,4 @@ spec:
     - binding:
         name: github-commit
       template:
-        name: trigger-template-secure-kube
+        name: trigger-template
