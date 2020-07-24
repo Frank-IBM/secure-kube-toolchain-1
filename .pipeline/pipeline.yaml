@@ -33,8 +33,6 @@ spec:
       description: The IBM Cloud region for image registry
     - name: registry-namespace
       description: container registry namespace
-    - name: app-name
-      description: application name
     - name: image-name
       description: image name
     - name: deployment-file
