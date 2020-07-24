@@ -29,10 +29,6 @@ spec:
     - name: build-args
       description: ibmcloud cr build argument list in the format 'KEY=VALUE' with a key-value pair per line.
       default: ""
-    - name: registry-region
-      description: The IBM Cloud region for image registry
-    - name: registry-namespace
-      description: container registry namespace
     - name: image-name
       description: image name
     - name: deployment-file
